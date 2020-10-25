@@ -1,7 +1,7 @@
 // Tablets & Smaller
 @media (max-width: 800px) {
   #header-home {
-    height: 30rem;
+    height: 92.5vh;
 
     .header-content {
       padding-top: 5rem;
@@ -21,12 +21,16 @@
 
   #header {
     &-home {
-      height: 10rem;
+      height: 85vh;
       border-bottom: 3px solid $main-color;
-      background-position: 20% 30%;
+      background-position: center right;
 
-      .header-content {
+      .header-content h1 {
         display: none;
+
+        p {
+          display: block;
+        }
       }
     }
 
@@ -67,43 +71,13 @@
         grid-template-areas:
           "bioimage"
           "bio"
-          "a1"
-          "a2"
-          "a3";
+          "connect";
         grid-gap: 0.5rem;
       }
     }
 
     &-c {
       display: none;
-    }
-  }
-
-  // Contact
-  #contact {
-    &-a {
-      .text-fields {
-        grid-template-areas:
-          "name"
-          "email"
-          "subject"
-          "phone"
-          "message";
-      }
-    }
-
-    &-b {
-      div:not(:last-child) {
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px #555 solid;
-      }
-    }
-
-    &-c {
-      h1 {
-        font-size: 2rem;
-      }
     }
   }
 
