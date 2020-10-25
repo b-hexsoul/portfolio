@@ -105,7 +105,7 @@ img {
   //Header Inner
   &-inner {
     background: $bg-image no-repeat center right / cover;
-    height: 5.5rem;
+    height: 6rem;
     border-bottom: 3px solid $main-color;
 
     #main-nav {
@@ -139,20 +139,27 @@ img {
   &-a {
     .about-info {
       display: grid;
-      grid-template-areas:
-        "bioimage bio bio"
-        "a1 a2 a3";
+      grid-template-areas: "bioimage bio bio";
       grid-gap: 1.2rem;
     }
 
     //Grid Area
     .bio-image {
       grid-area: bioimage;
+
+      img {
+        border-radius: 50%;
+      }
     }
 
     .bio {
       grid-area: bio;
+      border-radius: 10px;
       border-left: 3px solid $main-color;
+
+      p {
+        font-size: 1.1rem;
+      }
     }
   }
 
@@ -179,10 +186,10 @@ img {
     .about-logos {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
+      grid-gap: 1rem;
 
       img {
-        width: 70%;
+        width: 50%;
       }
     }
   }

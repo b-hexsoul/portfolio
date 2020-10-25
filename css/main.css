@@ -80,6 +80,22 @@ input[class^="btn-"]:hover {
   padding: 4rem 0;
 }
 
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
 .my-1 {
   margin: 1rem 0;
 }
@@ -301,7 +317,7 @@ img {
 
 #header-inner {
   background: url("../img/Pano.jpg") no-repeat center right/cover;
-  height: 5.5rem;
+  height: 6rem;
   border-bottom: 3px solid #ffbc00;
 }
 
@@ -323,7 +339,7 @@ img {
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: "bioimage bio bio" "a1 a2 a3";
+  grid-template-areas: "bioimage bio bio";
   grid-gap: 1.2rem;
 }
 
@@ -331,9 +347,18 @@ img {
   grid-area: bioimage;
 }
 
+#about-a .bio-image img {
+  border-radius: 50%;
+}
+
 #about-a .bio {
   grid-area: bio;
+  border-radius: 10px;
   border-left: 3px solid #ffbc00;
+}
+
+#about-a .bio p {
+  font-size: 1.1rem;
 }
 
 #about-b .progress {
@@ -354,11 +379,11 @@ img {
 #about-c .about-logos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 1rem;
 }
 
 #about-c .about-logos img {
-  width: 70%;
+  width: 50%;
 }
 
 #main-footer {
