@@ -81,7 +81,7 @@ img {
 #header {
   //Header Home
   &-home {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), $bg-image no-repeat center right / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)), $bg-image no-repeat center right / cover;
     height: 100vh;
     color: #fff;
 
@@ -139,7 +139,7 @@ img {
   &-a {
     .about-info {
       display: grid;
-      grid-template-areas: "bioimage bio bio";
+      grid-template-areas: "bioimage bio bio" "connect connect connect";
       grid-gap: 1.2rem;
     }
 
@@ -159,6 +159,19 @@ img {
 
       p {
         font-size: 1.1rem;
+      }
+    }
+
+    .connect {
+      grid-area: connect;
+
+      &-container {
+        display: flex;
+        justify-content: space-evenly;
+
+        i.fab:hover {
+          color: $main-color;
+        }
       }
     }
   }
@@ -184,12 +197,11 @@ img {
   // About C
   &-c {
     .about-logos {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 1rem;
+      display: flex;
+      justify-content: space-between;
 
       img {
-        width: 50%;
+        width: 10%;
       }
     }
   }
@@ -207,7 +219,7 @@ img {
     height: 5rem;
     align-items: center;
 
-    .social .fab {
+    .social a i.fab {
       margin-right: 1rem;
       border: 2px #fff solid;
       border-radius: 50%;
@@ -216,6 +228,7 @@ img {
       line-height: 20px;
       text-align: center;
       padding: 0.5rem;
+      color: #fff;
 
       &:hover {
         background: $main-color;

@@ -117,7 +117,7 @@ h2.section-title:after {
   width: 100px;
   border-bottom: 2px solid #ffbc00;
   display: block;
-  margin: 1rem auto;
+  margin: 0.75rem auto;
 }
 
 .section-title {
@@ -295,7 +295,7 @@ img {
 }
 
 #header-home {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/Pano.jpg") no-repeat center right/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)), url("../img/Pano.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff;
 }
@@ -339,7 +339,7 @@ img {
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: "bioimage bio bio";
+  grid-template-areas: "bioimage bio bio" "connect connect connect";
   grid-gap: 1.2rem;
 }
 
@@ -361,6 +361,19 @@ img {
   font-size: 1.1rem;
 }
 
+#about-a .connect {
+  grid-area: connect;
+}
+
+#about-a .connect-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#about-a .connect-container i.fab:hover {
+  color: #ffbc00;
+}
+
 #about-b .progress {
   overflow: hidden;
   height: 20px;
@@ -377,13 +390,12 @@ img {
 }
 
 #about-c .about-logos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 #about-c .about-logos img {
-  width: 50%;
+  width: 10%;
 }
 
 #main-footer {
@@ -399,7 +411,7 @@ img {
   align-items: center;
 }
 
-#main-footer .footer-content .social .fab {
+#main-footer .footer-content .social a i.fab {
   margin-right: 1rem;
   border: 2px #fff solid;
   border-radius: 50%;
@@ -408,9 +420,10 @@ img {
   line-height: 20px;
   text-align: center;
   padding: 0.5rem;
+  color: #fff;
 }
 
-#main-footer .footer-content .social .fab:hover {
+#main-footer .footer-content .social a i.fab:hover {
   background: #ffbc00;
   color: #333;
 }
